@@ -1,15 +1,10 @@
 board=[" " for x in range(9)]
 
 def print_board():
-    row1="|{}|{}|{}|".format(board[0],board[1],board[2])
-    row2="|{}|{}|{}|".format(board[3],board[4],board[5])
-    row3="|{}|{}|{}|".format(board[6],board[7],board[8])
-    print()
-    print(row1)
-    print(row2)
-    print(row3)
-    print()
-    
+    row1=f"|{board[0]}|{board[1]}|{board[2]}|"
+    row2=f"|{board[3]}|{board[4]}|{board[5]}|"
+    row3=f"|{board[6]}|{board[7]}|{board[8]}|"
+    print(f"\n{row1}\n{row2}\n{row3}\n")
     
 def player_move(icon):
     if icon=="X":
