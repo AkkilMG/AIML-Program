@@ -14,7 +14,7 @@ def player_move(icon):
     print("Your tunr player {}".format(number))
     choice=int(input("Ente the value(1-9) : ").strip())
     if board[choice-1]==" ":
-        board[choice-1]==icon
+        board[choice-1]=icon
     else:
         print()
         print("Space is already taken")
